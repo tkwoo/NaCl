@@ -7,6 +7,7 @@
 </head>
 <body onLoad="pageDidLoad()">
   <h1>OpenCV in Chrome using NaCl</h1>
+  <h2>2017.09.21</h2>
 
   <p>This page uses <a
   href="https://developers.google.com/native-client/dev/">
@@ -18,7 +19,7 @@
   <em>NB</em>: No data is sent back to this website.
   </p>
 
-  <p>Requires Chrome web browser version 44 or above (not Android app)</p>
+  <p>Requires Chrome web browser version 57 or above (not Android app)</p>
 
   <select id="camera" hidden></select> 
   <button id="stream" hidden></button> 
@@ -39,11 +40,13 @@
 
   <h2>Status <code id="statusField">NO-STATUS</code></h2>
 
-  <a href="https://github.com/mattmcd/NaCl/tree/master/ImageProc">GitHub repo</a>
-
+  <a href="https://github.com/tkwoo/NaCl.git">Editor GitHub repo</a>
+  <p>tkwoo</p>
   <!-- <img id="smiley" src="smiley_200x200.png" width="200" height="200"
        hidden></img> -->
-  <img id="smiley" crossOrigin="" src="smiley_200x200.png" width="200" height="200" hidden></img>
-  <canvas id="smiley_canvas" width="200" height="200" hidden></canvas>
+  <!-- <img id="smiley" crossOrigin="" src="smiley_200x200.png" width="200" height="200" hidden></img> -->
+  <img id="smiley" crossOrigin="" src="happy.png" width="256" height="256" hidden></img>
+  
+  <canvas id="smiley_canvas" width="256" height="256" hidden></canvas>
 </body>
 </html>

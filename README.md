@@ -1,6 +1,9 @@
 NaCl
 ====
 
+## I edit 'ImageProc' part for recent chrome version
+
+
 A collection of Google Native Client examples designed primarily to help me learn the platform.
 Development history so far:
 
@@ -13,5 +16,13 @@ Development history so far:
 
 Setup
 -----
-Please see setup.txt for steps needed to install NaCl SDK and naclports on Ubuntu 14.04.  
-This works on Amazon AWS t2.micro instance so should be easy to get up and running.
+Please see setup.txt for steps needed to install NaCl SDK and naclports on CentOS 7. This works on Amazon AWS t2.micro instance so should be easy to get up and running.
+
+
+-----
+Setup (edit)
+
+- CentOS 7.
+- Chrome 57.xx
+- Pepper 49
+

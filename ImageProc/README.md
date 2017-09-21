@@ -70,11 +70,11 @@ PORTS_ROOT.  On my machine these are ~/Work/ExternCode/nacl_sdk and
 1. Update NaCl SDK
    - cd NACL_ROOT
    - ./naclsdk update
-2. Update NACL_SDK_ROOT environment variable e.g. NACL_ROOT/pepper_41
+2. Update NACL_SDK_ROOT environment variable e.g. NACL_ROOT/pepper_49
 3. Update ports
    - cd PORTS_ROOT
    - cd src
-   - git checkout -b pepper_41 origin/pepper_41
+   - git checkout -b pepper_49 origin/pepper_49
    - gclient sync
    - (If that fails, cd .. vim .gclient and set managed=False)
 

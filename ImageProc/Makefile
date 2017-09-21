@@ -47,4 +47,6 @@ image_proc.pexe: image_proc.bc
 	$(PNACL_FINALIZE) -o $@ $<
 
 serve:
-	python -m SimpleHTTPServer 8000
+	# python -m SimpleHTTPServer 8000
+	# python http_serve.py 192.168.6.147:9000
+	python http_serve.py localhost:8000

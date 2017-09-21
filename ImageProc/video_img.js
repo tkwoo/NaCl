@@ -7,16 +7,15 @@ function make_image_source(useVideo, fileList) {
   
   function getVideoSources(cbFun) {
     // Populate list of video sources e.g. laptop camera and USB webcam
-    MediaStreamTrack.getSources( 
-      function( srcInfo ) {
-        videoSourceId = srcInfo
-          .filter( function(s) { return s.kind == "video"; } );
-        selectedSource = videoSourceId[0].id;
-        if (typeof cbFun !== 'undefined') {
-          cbFun(videoSourceId);
-        }
-      } 
-    );
+    navigator.mediaDevices.enumerateDevices()
+    .then(function (srcInfo){
+      videoSourceId = srcInfo
+        .filter( function(s) { return s.kind == "video"; } );
+      selectedSource = videoSourceId[0];//.id;
+      if (typeof cbFun !== 'undefined') {
+        cbFun(videoSourceId);
+      }
+    });
   }
 
   function setVideoInput(cbFun) {
